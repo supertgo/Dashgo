@@ -58,17 +58,32 @@ export default function UserList() {
           <Table colorScheme="whiteAplha">
             <Thead>
               <Tr>
-                <Th px={['4', '4', '6']} color="gray.300" w="8">
+                <Th px={['4', '4', '6']} width="8">
                   <Checkbox colorScheme="pink" />
                 </Th>
                 <Th>Usuário</Th>
                 {isWideVersion && <Th>Data de cadastro</Th>}
-                <Th w="8"></Th>
+                {isWideVersion && <Th width="8"></Th>}
               </Tr>
             </Thead>
             <Tbody>
               <Tr>
-                <Td px={['4', '4', '6']}>
+                <Td color="gray.300" px={['4', '4', '6']}>
+                  <Checkbox colorScheme="pink" />
+                </Td>
+                <Td>
+                  <Box>
+                    <Text fontWeight="bold">Tobias</Text>
+                    <Text fontSize="sm" color="gray.300">
+                      rogeriotobias@gmail.com
+                    </Text>
+                  </Box>
+                </Td>
+                {isWideVersion && <Td>04 de Abril, 2021</Td>}
+              </Tr>
+
+              <Tr>
+                <Td color="gray.300" px={['4', '4', '6']}>
                   <Checkbox colorScheme="pink" />
                 </Td>
                 <Td>
