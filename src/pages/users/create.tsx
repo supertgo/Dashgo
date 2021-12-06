@@ -5,15 +5,6 @@ import {
   SimpleGrid,
   Button,
   HStack,
-  Icon,
-  Table,
-  Thead,
-  Tr,
-  Th,
-  Td,
-  Tbody,
-  Text,
-  Checkbox,
   Divider,
   VStack
 } from '@chakra-ui/react';
@@ -21,8 +12,6 @@ import {
 import { Header } from 'components/Header';
 import Sidebar from 'components/Sidebar';
 import { Input } from 'components/Form/Input';
-
-import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 
 export default function CreateUser() {
   return (
