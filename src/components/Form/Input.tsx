@@ -15,12 +15,10 @@ type InputProps = {
   label?: string;
 } & ChakraInputProps;
 
-const InputBase: ForwardRefRenderFunction<HTMLIFrameElement, InputProps> = ({
-  name,
-  label,
-  error = null,
-  ...rest
-}) => {
+const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
+  { name, label, error = null, ...rest },
+  ref
+) => {
   return (
     <FormControl isInvalid={!!error}>
       {!!label && <FormLabel htmlFor={name}>{label}</FormLabel>}
@@ -35,6 +33,7 @@ const InputBase: ForwardRefRenderFunction<HTMLIFrameElement, InputProps> = ({
         _hover={{
           bgColor: 'gray.900'
         }}
+        ref={ref}
         {...rest}
       />
 
