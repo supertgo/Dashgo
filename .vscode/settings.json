@@ -5,6 +5,7 @@
   },
   "conventionalCommits.scopes": [
     "components",
-    "api"
+    "api",
+    "hooks"
   ]
 }
